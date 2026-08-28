@@ -1,9 +1,9 @@
-//acho que o slide estava errado, eu fiz para validar 6 caracteres, as 4 letras maiusculas e 2 numeros
-
+//acho que o slide estava errado, eu fiz para validar 7 caracteres, as 3 letras maiusculas e 4 numeros
+//para bater com o caso de teste
 use std::io;
 fn validar_placa(placa: &str) -> bool {
     
-    if placa.len() < 6 {
+    if placa.len() < 7 {
         return false;
     }
     
@@ -18,7 +18,7 @@ fn validar_placa(placa: &str) -> bool {
         }
     }
     
-    if maiusculas >= 4 && numeros >= 2 {
+    if maiusculas >= 3 && numeros >= 4 {
         return true;
     } else {
         return false;
